@@ -1,13 +1,15 @@
-import React from 'react';
-import './App.css';
-import MovieList from './MoveList';
+import React from 'react'
+import './App.css'
+import MovieList from './MovieList'
+import Nav from './Nav'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <MovieList />;
+      <Nav />
+      <MovieList />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

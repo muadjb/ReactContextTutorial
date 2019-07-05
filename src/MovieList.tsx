@@ -1,4 +1,14 @@
 import React, { useState } from 'react'
+import Movie from './Movie'
+
+export interface MovieType {
+  name: string
+  price: string
+  id: number
+}
+export interface MovieProps {
+  movie: MovieType
+}
 
 const MovieList: React.FC = () => {
   const [movies, setMovies] = useState([
@@ -10,7 +20,7 @@ const MovieList: React.FC = () => {
   return (
     <div>
       {movies.map(m => (
-        <li>{m.name}</li>
+        <Movie key={m.id} movie={m} />
       ))}
     </div>
   )
