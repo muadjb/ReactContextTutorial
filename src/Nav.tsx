@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MovieContext } from './MovieContext'
 
 export default function Nav() {
+  const movies = useContext(MovieContext)
   return (
-    <div>
+    <nav>
       <h2>JB</h2>
-      <p>List of Movies: </p>
-    </div>
+      <p>List of Movies: ({movies.length}) </p>
+    </nav>
   )
 }
