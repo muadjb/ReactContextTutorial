@@ -7,13 +7,9 @@ export interface MovieType {
   price: string
   id: number
 }
-export interface MovieProps {
-  movie: MovieType
-}
-
 const MovieList: React.FC = () => {
   // const [movies, setMovies] = useContext(MovieContext)
-  const movies = useContext(MovieContext)
+  const [movies, setMovies] = useContext(MovieContext)
 
   return (
     <div>

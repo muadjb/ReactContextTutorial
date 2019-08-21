@@ -1,8 +1,12 @@
 import React from 'react'
-import { MovieProps } from './MovieList'
+import { MovieType } from './MovieList'
 
-const Movie: React.FC<MovieProps> = ({ movie }) => {
-  // function Movie<MovieProps>(props): React.FC {
+export interface MovieProps {
+  movie: MovieType
+}
+
+// const Movie: React.FC<MovieProps> = ({ movie }) => {
+function Movie({ movie }: MovieProps) {
   return (
     <div>
       <h3>{movie.title}</h3>

@@ -18,7 +18,9 @@ export default function AddMovie() {
 
   function addMovie(e: FormEvent<HTMLButtonElement>) {
     e.preventDefault()
-    // setMovies(prevMovies => [...prevMovies, { title: 'jb', price: '42', id: 99 }])
+    console.log('adding movie')
+
+    setMovies([...movies, { title, price, id: 99 }])
   }
 
   return (

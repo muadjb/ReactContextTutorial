@@ -9,14 +9,14 @@ import AddMovie2 from './AddMovie2'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <MovieList2 />
+    //   <MovieList2 />
 
-      {/* <MovieProvider>
+    <div className="App">
+      <MovieProvider>
         <Nav />
         <AddMovie />
         <MovieList />
-      </MovieProvider> */}
+      </MovieProvider>
     </div>
   )
 }

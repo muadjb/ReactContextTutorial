@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MovieContext } from './MovieContext'
 
 export default function Nav() {
-  const movies = useContext(MovieContext)
+  const [movies, setMovies] = useContext(MovieContext)
   return (
     <nav>
       <h2>JB</h2>
